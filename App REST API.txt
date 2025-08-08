@@ -1,0 +1,21 @@
+Flask REST API Setup Report
+
+- Flask server is running on http://127.0.0.1:5000
+- Debugger is active with no errors
+- Application starts successfully
+
+ Issues Encountered:
+
+- curl POST request to /users did not return a response
+- No request log/output seen in the Flask console
+- Possible reasons:
+  • Incorrect curl syntax (especially on Windows)
+  • POST route for /users may be missing in app.py
+  • Local firewall or antivirus may be blocking the request
+
+ Troubleshooting Steps Taken:
+
+- Verified Flask app is running
+- Suggested adding a root route (/) for quick testing
+- Provided correct curl syntax for Windows CMD and PowerShell
+- Recommended using Postman to send test request
